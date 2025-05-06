@@ -17,3 +17,6 @@ class CNNModel(nn.Module):
         x = x.view(-1, 64 * 7 * 7)
         x = F.relu(self.fc1(x))
         return self.fc2(x)
+
+
+
